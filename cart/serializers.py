@@ -4,6 +4,7 @@ from book.models import Book, Genre
 from mobile.models import Mobile
 from clothes.models import Clothes
 from shoes.models import Shoes
+from django.core.exceptions import ObjectDoesNotExist
 
 class CartItemSerializer(serializers.ModelSerializer):
     product_info = serializers.SerializerMethodField()
